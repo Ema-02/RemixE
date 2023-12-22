@@ -82,6 +82,8 @@ async def check_is_joined(message):
     & ~filters.forwarded
     & ~filters.via_bot
 )
+    if not await check_is_joined(message):
+        return
 async def play(_, message: Message):
     fallen = await message.reply_text("» ᴘʀᴏᴄᴇssɪɴɢ, ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ...")
     try:
