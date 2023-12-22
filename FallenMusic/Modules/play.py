@@ -24,7 +24,7 @@ import asyncio
 import os
 
 from pyrogram import filters
-from FallenMusic.Helpers import command
+from FallenMusic.Helpers.filters import command
 from pyrogram.enums import ChatMemberStatus
 from pyrogram.errors import (
     ChatAdminRequired,
