@@ -25,7 +25,7 @@ import os
 import requests
 import yt_dlp
 from pyrogram import filters
-from FallenMusic.Helpers.filters import command,subscribed
+from FallenMusic
 from pyrogram.enums import ChatType
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from youtube_search import YoutubeSearch
@@ -33,7 +33,7 @@ from youtube_search import YoutubeSearch
 from FallenMusic import BOT_MENTION, BOT_USERNAME, LOGGER, app
 
 
-@app.on_message(command(["/song", "/vson", "بحث"]) & subscribed, group=111))
+@app.on_message(command(["song", "vsong", "بحث"]))
 async def song(_, message: Message):
     try:
         await message.delete()
