@@ -24,6 +24,7 @@ import asyncio
 import os
 
 from pyrogram import filters
+from Helpers.filters import command
 from pyrogram.enums import ChatMemberStatus
 from pyrogram.errors import (
     ChatAdminRequired,
@@ -60,7 +61,7 @@ from FallenMusic.Helpers.thumbnails import gen_qthumb, gen_thumb
 
 
 @app.on_message(
-    filters.command(["play", "vplay", "p"])
+    command(["play", "vplay", "p", "تشغيل"])
     & filters.group
     & ~filters.forwarded
     & ~filters.via_bot
