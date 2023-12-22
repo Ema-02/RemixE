@@ -22,9 +22,8 @@
 
 import asyncio
 import os
-from ast import ExceptHandler
 from pyrogram import filters
-from FallenMusic.Helpers.filters import command
+from FallenMusic.Helpers.filters import command,subscribed
 from pyrogram.enums import ChatMemberStatus
 from pyrogram.errors import (
     ChatAdminRequired,
@@ -59,31 +58,13 @@ from FallenMusic.Helpers.inline import buttons
 from FallenMusic.Helpers.queue import put
 from FallenMusic.Helpers.thumbnails import gen_qthumb, gen_thumb
 
-force_btn = InlineKeyboardMarkup(
-    [
-        [
-            InlineKeyboardButton(   
-              text=f"فَلسفة مشاعر.", url=f"t.me/cczza",)                        
-        ],        
-    ]
-)
-async def check_is_joined(message):    
-    try:
-        userid = message.from_user.id
-        user_name = message.from_user.first_name
-        status = await app.get_chat_member("cczza", userid)
-        return True
-    except Exception:
-        await message.reply_text(f'🚧┇عزيزي: {message.from_user.mention}\n🚧┇أشتࢪك في قناة البوت أولاً.\n🚧┇قناة البوت: @cczza 🧚‍♀',reply_markup=force_btn,disable_web_page_preview=False)
-        return False
+@app.on_message(filters.command("ben") & subscribed, group=111)
 @app.on_message(
     command(["/play", "/vplay", "/p", "تشغيل"])
-    & filters.group
+    & subscribed, group=111)
     & ~filters.forwarded
     & ~filters.via_bot
 )
-    if not await check_is_joined(message):
-        return
 async def play(_, message: Message):
     fallen = await message.reply_text("» ᴘʀᴏᴄᴇssɪɴɢ, ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ...")
     try:
