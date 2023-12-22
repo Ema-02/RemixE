@@ -21,7 +21,7 @@
 # SOFTWARE.
 
 from pyrogram import filters
-from Helpers.filters import command
+from FallenMusic.Helpers import command
 from pyrogram.types import Message
 from pytgcalls.types import AudioPiped, HighQualityAudio
 
