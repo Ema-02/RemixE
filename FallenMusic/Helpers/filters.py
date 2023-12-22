@@ -10,7 +10,7 @@ def command(commands: Union[str, List[str]]):
     return filters.command(commands, "")
 
 
-channel = "BENfiles" # Your Channel
+channel = "cczza" # Your Channel
 async def subscription(_, __: Client, message: Message):
     user_id = message.from_user.id
     try: await app.get_chat_member(channel, user_id)
