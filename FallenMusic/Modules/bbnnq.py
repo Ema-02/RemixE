@@ -3,7 +3,7 @@ import os
 import random
 import asyncio
 from pyrogram import Client,filters
-from FallenMusic.Helpers.filtser import command
+from FallenMusic.Helpers.filters import command
 from pyrogram.types import (Message,
 InlineKeyboardMarkup,InlineKeyboardButton)
 from typing import Union
