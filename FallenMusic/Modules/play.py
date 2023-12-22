@@ -58,10 +58,9 @@ from FallenMusic.Helpers.inline import buttons
 from FallenMusic.Helpers.queue import put
 from FallenMusic.Helpers.thumbnails import gen_qthumb, gen_thumb
 
-@app.on_message(filters.command("ben") & subscribed, group=111)
 @app.on_message(
     command(["/play", "/vplay", "/p", "تشغيل"])
-    & subscribed, group=111)
+    & subscribed, group=111
     & ~filters.forwarded
     & ~filters.via_bot
 )
