@@ -23,6 +23,7 @@
 import asyncio
 
 from pyrogram import filters
+from FallenMusic.Helpers.filtser import command
 from pyrogram.errors import FloodWait
 from pyrogram.types import Message
 
@@ -30,7 +31,7 @@ from config import OWNER_ID
 from FallenMusic import app, app2
 
 
-@app.on_message(filters.command("broadcast") & filters.user(OWNER_ID))
+@app.on_message(command("اذاعة") & filters.user(OWNER_ID))
 async def broadcast(_, message: Message):
     brep = await message.reply_text("sᴛᴀʀᴛᴇᴅ ᴀssɪsᴛᴀɴᴛ ʙʀᴏᴀᴅᴄᴀsᴛ...")
     if message.reply_to_message:
