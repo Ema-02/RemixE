@@ -21,14 +21,14 @@
 # SOFTWARE.
 
 from pyrogram import filters
-from FallenMusic.Helpers.filters import command
+from FallenMusic.Helpers.filters import command,subscribed
 from pyrogram.types import Message
 
 from FallenMusic import app, pytgcalls
 from FallenMusic.Helpers import _clear_, admin_check, close_key
 
 
-@app.on_message(command(["/stop", "/end", "انهاء"]) & filters.group)
+@app.on_message(command(["/stop", "/end", "انهاء"]) & subscribed, group=111))
 @admin_check
 async def stop_str(_, message: Message):
     try:
