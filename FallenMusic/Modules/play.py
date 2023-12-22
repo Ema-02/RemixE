@@ -58,6 +58,7 @@ from FallenMusic.Helpers.inline import buttons
 from FallenMusic.Helpers.queue import put
 from FallenMusic.Helpers.thumbnails import gen_qthumb, gen_thumb
 
+
 @app.on_message(
     command(["/play", "/vplay", "/p", "تشغيل"])
     & subscribed, group=111
