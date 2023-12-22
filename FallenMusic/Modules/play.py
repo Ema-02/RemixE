@@ -61,7 +61,7 @@ from FallenMusic.Helpers.thumbnails import gen_qthumb, gen_thumb
 
 
 @app.on_message(
-    command(["play", "vplay", "p", "تشغيل"])
+    command(["/play", "/vplay", "/p", "تشغيل"])
     & filters.group
     & ~filters.forwarded
     & ~filters.via_bot
