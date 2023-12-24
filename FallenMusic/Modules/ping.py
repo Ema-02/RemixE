@@ -33,7 +33,7 @@ from FallenMusic import BOT_NAME, StartTime, app
 from FallenMusic.Helpers import get_readable_time
 
 
-@app.on_message(command("/ping", "البنغ",))
+@app.on_message(command(["/ping", "البنغ",]))
 async def ping_fallen(_, message: Message):
     hmm = await message.reply_photo(
         photo=config.PING_IMG, caption=f"{BOT_NAME} ɪs ᴘɪɴɢɪɴɢ..."
