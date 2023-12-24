@@ -29,7 +29,7 @@ from FallenMusic import BOT_USERNAME, app, fallendb, pytgcalls
 from FallenMusic.Helpers import _clear_, admin_check, buttons, close_key, gen_thumb
 
 
-@app.on_message(command(["/skip", "/next", "تخطي"]) & filters.group))
+@app.on_message(command(["/skip", "/next", "تخطي"]) & filters.group)
 @admin_check
 async def skip_str(_, message: Message):
     try:
