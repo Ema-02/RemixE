@@ -26,7 +26,7 @@ import config
 from FallenMusic import BOT_USERNAME
 
 close_key = InlineKeyboardMarkup(
-    [[InlineKeyboardButton(text="✯ ᴄʟᴏsᴇ ✯", callback_data="close")]]
+    [[InlineKeyboardButton(text="إغلاق", callback_data="close")]]
 )
 
 
@@ -66,7 +66,7 @@ pm_buttons = [
 gp_buttons = [
     [
         InlineKeyboardButton(
-            text=""- أضفني الى مجموعتك ➕",
+            text="- أضفني الى مجموعتك ➕",
             url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
         )
     ],
