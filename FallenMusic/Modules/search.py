@@ -21,13 +21,14 @@
 # SOFTWARE.
 
 from pyrogram import filters
+from FallenMusic.Helpers.filters import command
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from youtube_search import YoutubeSearch
 
 from FallenMusic import app
 
 
-@app.on_message(filters.command(["search"]))
+@app.on_message(command(["بحث"]))
 async def ytsearch(_, message: Message):
     try:
         await message.delete()
@@ -35,7 +36,7 @@ async def ytsearch(_, message: Message):
         pass
     try:
         if len(message.command) < 2:
-            return await message.reply_text("» ɢɪᴠᴇ sᴏᴍᴇ ᴛᴇxᴛ ᴛᴏ sᴇᴀʀᴄʜ ʙᴀʙʏ !")
+            return await message.reply_text("- أعطني بعض النص للبحث فيه يا عزيزي !")
         query = message.text.split(None, 1)[1]
         m = await message.reply_text("🔎")
         results = YoutubeSearch(query, max_results=4).to_dict()
@@ -52,7 +53,7 @@ async def ytsearch(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        text="ᴄʟᴏsᴇ",
+                        text="إغلاق",
                         callback_data=f"forceclose abc|{message.from_user.id}",
                     ),
                 ]
