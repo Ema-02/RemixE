@@ -25,6 +25,7 @@ from datetime import datetime
 
 import psutil
 from pyrogram import filters
+from FallenMusic.Helpers.filters import command
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 import config
@@ -60,7 +61,7 @@ async def ping_fallen(_, message: Message):
                     InlineKeyboardButton("❄ sᴜᴘᴘᴏʀᴛ ❄", url=config.SUPPORT_CHAT),
                     InlineKeyboardButton(
                         "✨ aHmeD ✨",
-                        user_id=8566649827,
+                        user_id=5866649827,
                     ),
                 ],
             ]
