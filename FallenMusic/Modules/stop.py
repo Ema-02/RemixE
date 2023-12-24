@@ -21,7 +21,7 @@
 # SOFTWARE.
 
 from pyrogram import filters
-from FallenMusic.Helpers.filters import command,subscribed
+from FallenMusic.Helpers.filters import command
 from pyrogram.types import Message
 
 from FallenMusic import app, pytgcalls
