@@ -25,7 +25,7 @@ import os
 import requests
 import yt_dlp
 from pyrogram import filters
-from FallenMusic.Helpers.filters import command,subscribed
+from FallenMusic.Helpers.filters import command
 from pyrogram.enums import ChatType
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from youtube_search import YoutubeSearch
