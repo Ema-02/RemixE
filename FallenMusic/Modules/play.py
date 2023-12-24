@@ -66,7 +66,7 @@ from FallenMusic.Helpers.thumbnails import gen_qthumb, gen_thumb
     & ~filters.via_bot
 )
 async def play(_, message: Message):
-    fallen = await message.reply_text("» ᴘʀᴏᴄᴇssɪɴɢ, ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ...")
+    fallen = await message.reply_text("- جارٍ التشغيل أنتظر لحظة ...")
     try:
         await message.delete()
     except:
