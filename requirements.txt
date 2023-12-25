@@ -12,3 +12,4 @@ speedtest-cli==2.1.3
 yt-dlp==2023.03.03
 youtube-search-python@main
 youtube_search
+
