@@ -23,22 +23,22 @@
       },
       "BOT_TOKEN": {
         "description": "A Bot's token from Botfather",
-        "value": "629239916KV6FR-fNOmNVgZCPXnehlOU",
+        "value": "",
         "required": true
       },
       "OWNER_ID": {
         "description": "Fill your user id here. (Must be integer)",
-        "value": "5869827",
+        "value": "",
         "required": true
       },
       "SESSION": {
         "description": "A pyrogram v2 string session from @StringFatherBot",
-        "value": "BAGGCcgtnozCludsmtMZtp5X4UEVJkXCCKQKNwC_etqWZVH1BoOKxEwRlp9LKk0woXh3J4rS-kTTnVkHlmo_95WN0qHCemrc3WEN0X_1pLwZgECULQXSU9YJAJ3K97_mDsnL21sUyTsSBTcU4Y-Ew99iU8ZHuZTw4ccV-A9smhHK5qlV1he-mGtJg0zzFr4YOqUXCv71bOkvQ3zrHJ74GZyhLECt5Zyy3FbF8KP42Gch_EiLPziVlOE3y4GavTtmbYyL_koUFVvDMQRiRdRVF6DC81zapC0t06pSr-4lhmMVdUwAAAAGCEwTqAA",
+        "value": "",
         "required": true
       },
       "SUDO_USERS": {
         "description": "The user id(s) of user(s) whom you would like to add as a sudo. Multiple values shall be seperated with a space.",
-        "value": "5869827",
+        "value": "",
         "required": true
       },
       "SUPPORT_CHAT": {
