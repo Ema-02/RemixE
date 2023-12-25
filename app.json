@@ -13,37 +13,37 @@
     "env": {
       "API_ID": {
         "description": "Get this value from https://my.telegram.org",
-        "value": "23337074",
+        "value": "234",
         "required": true
       },
       "API_HASH": {
         "description": "Get this value from https://my.telegram.org",
-        "value": "2e0ea05d6d6bfd6708fa51f54f36baf7",
+        "value": "2e0ea05d6d6b1f54f36baf7",
         "required": true
       },
       "BOT_TOKEN": {
         "description": "A Bot's token from Botfather",
-        "value": "6292399606:AAEA07rGS516KV6FR-fNOmNVgZCPXnehlOU",
+        "value": "629239916KV6FR-fNOmNVgZCPXnehlOU",
         "required": true
       },
       "OWNER_ID": {
         "description": "Fill your user id here. (Must be integer)",
-        "value": "5866649827",
+        "value": "5869827",
         "required": true
       },
       "SESSION": {
         "description": "A pyrogram v2 string session from @StringFatherBot",
-        "value": "BAGGCcgAQ2dddMIcj_tnolJcLH60z0iO3dCzCludweux4RP1e1smtMdR6PJ8ZtpA9tTq5X4U5EVJkXCCKQKNwC_etqWZVH1BoOKxEwRlp9LKk0woXh3J4rS-kTTnVkHlmo_95WN0qHCemrc3WEN0X_1pLwZgECULQXSU9YJAJ3K97_mDsnL21sUyTsSBTcU4Y-Ew99iU8ZHuZTw4ccV-A9smhHK5qlV1he-mGtJg0zzFr4YOqUXCv71bOkvQ3zrHJ74GZyhLECt5Zyy3FbF8KP42Gch_EiLPziVlOE3y4GavTtmbYyL_koUFVvDMQRiRdRVF6DC81zapC0t06pSr-4lhmMVdUwAAAAGCEwTqAA",
+        "value": "BAGGCcgtnozCludsmtMZtp5X4UEVJkXCCKQKNwC_etqWZVH1BoOKxEwRlp9LKk0woXh3J4rS-kTTnVkHlmo_95WN0qHCemrc3WEN0X_1pLwZgECULQXSU9YJAJ3K97_mDsnL21sUyTsSBTcU4Y-Ew99iU8ZHuZTw4ccV-A9smhHK5qlV1he-mGtJg0zzFr4YOqUXCv71bOkvQ3zrHJ74GZyhLECt5Zyy3FbF8KP42Gch_EiLPziVlOE3y4GavTtmbYyL_koUFVvDMQRiRdRVF6DC81zapC0t06pSr-4lhmMVdUwAAAAGCEwTqAA",
         "required": true
       },
       "SUDO_USERS": {
         "description": "The user id(s) of user(s) whom you would like to add as a sudo. Multiple values shall be seperated with a space.",
-        "value": "5866649827",
+        "value": "5869827",
         "required": true
       },
       "SUPPORT_CHAT": {
         "description": "Link of your telegram support group. (Must pe public)",
-        "value": "https://t.me/cczza",
+        "value": "https://t.me/czza",
         "required": false
       }
     },
